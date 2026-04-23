@@ -1,0 +1,42 @@
+@baseURL = http://localhost:3000/pontuacoes
+
+### Alexa/// Hello Kitty
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "jogo_id": 1,
+  "jogador_id": 1,
+  "pontuacao": 250
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "jogo_id": 1,
+  "jogador_id": 2,
+  "pontuacao": 400
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "jogo_id": 2,
+  "jogador_id": 1,
+  "pontuacao": 900
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "jogo_id": 2,
+  "jogador_id": 2,
+  "pontuacao": 1200
+}
+
+
+### jogos + populares
+GET {{baseURL}}/jogos/populares

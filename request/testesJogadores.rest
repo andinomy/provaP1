@@ -1,0 +1,30 @@
+@baseURL = http://localhost:3000/jogadores
+
+### Listar jogadores
+GET {{baseURL}}
+Content-Type: application/json
+
+### Criar jogador
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Mylena",
+  "nickname": "mymyzinha"
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Alexa Maddison",
+  "nickname": "itsalexa"
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Jennie Kim",
+  "nickname": "jennierubyjen"
+}

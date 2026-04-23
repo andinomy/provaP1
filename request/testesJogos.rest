@@ -1,0 +1,34 @@
+@baseURL = http://localhost:3000/jogos
+
+### Listar jogos
+GET {{baseURL}}
+
+###
+
+### Criar jogo
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Mario",
+  "plataforma": "Super Nintendo",
+  "ano_lancamento": 1990
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Hello Kitty Island Adventure",
+  "plataforma": "PC",
+  "ano_lancamento": 2023
+}
+###
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+  "nome": "Counter-Strike 2",
+  "plataforma": "PC",
+  "ano_lancamento": 2023
+}
